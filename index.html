@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee data</title>
+</head>
+
+<body>
+    <div class="fieldsetDiv">
+        <fieldset class="Employee">
+            <legend>
+                <h3>Employee data</h3>
+            </legend>
+            <form>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="" id="name" value="">
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="" id="email" value="" required placeholder="xxxxxxxx@xxxx.xxx"
+                            pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}">
+                    </li>
+                    <li>
+                        <label for="phoneNumber">Phone number:</label>
+                        <input type="tel" name="" id="phoneNumber" value="">
+                    </li>
+                    <li>
+                        <label for="dateOfBirth">Date of birth:</label>
+                        <input type="date" name="" id="dateOfBirth" value="">
+                    </li>
+                    <li>
+                        <label for="salary">Salary:</label>
+                        <input type="tel" name="" id="salary" value="">
+                    </li>
+                    <li>
+                        <button type="button" class="btnEmployee">Enter employee data</button>
+                    </li>
+                </ul>
+            </form>
+        </fieldset>
+    </div>
+    <div class="divOfEmployee">
+        <table id="tableOfEmployee">
+            <caption><span> Employees data</span><span><button class="sortByNameEmployee-btn">Sort by
+                        name</button></span>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col" id="employeeID">
+                        Employee ID
+                    </th>
+                    <th scope="col" id="employee">
+                        Full name of employee
+                    </th>
+                    <th scope="col" id="email">
+                        Email
+                    </th>
+                    <th scope="col" id="phoneNumber">
+                        Phone number
+                    </th>
+                    <th scope="col" id="dateOfBirth">
+                        Date of birth
+                    </th>
+                    <th scope="col" id="salary">
+                        Salary
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="employeeTbody" contenteditable="false">
+                <!-- tr element insert with JS -->
+            </tbody>
+        </table>
+    </div>
+    <!-- type="module" to allow us to import modules -->
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+fieldset {
+    width: 500px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+legend {
+    background-color: rgb(42, 130, 165);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 5px;
+    width: 350px;
+}
+
+input {
+    appearance: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 200px;
+    height: 1.5rem;
+    padding: 5px;
+}
+
+button {
+    margin: 0 auto;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 50px 0px;
+}
+
+th,
+tr,
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    word-wrap: break-word;
+}
+
+caption {
+    width: 100%;
+    margin: 15px auto;
+    font-size: xx-large;
+}
+
+.sortByNameEmployee-btn {
+    margin-left: 50px;
+}
+
+.deleteData {
+    margin: 5px auto;
+    cursor: pointer;
+}
+
+.deleteData:hover {
+    background-color: red;
+    color: white;
+}
+
+.updateData {
+    cursor: pointer;
+}
+
+.updateData:hover {
+    background-color: green;
+    color: white;
+}
